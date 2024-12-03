@@ -25,8 +25,9 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        
                     </ul>
                 </div>
 
@@ -182,31 +183,62 @@
           
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
+            <!-- ===== PROJECTS ===== -->
+          
+<section class="projects section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects__filter-container">
+    <select id="project-filter">
+      <option value="all">All Projects</option>
+      <option value="web">Web Development</option>
+      <option value="mobile">Mobile Application</option>
+      <option value="other">Other</option>
+  </select>
+
+  </div>
+  <div class="projects__container bd-grid">
+      <!-- Project 1 -->
+      <div class="projects__card" data-category="web">
+          <img src="assets/img/Bookstore-Application-MERN-project.png" alt="Bookstore-Application-MERN-project" class="projects__img">
+          <h3 class="projects__title">Bookstore-Application-MERN-project</h3>
+          <p class="projects__description">"An innovative and user-friendly bookstore application built using the MERN stack, providing seamless browsing, purchasing, and order management features. This project demonstrates my ability to integrate MongoDB, Express, React, and Node.js to create a responsive, full-stack e-commerce solution."</p>
+          <a href="https://github.com/LuckyShrestha2002/Book-store-application-MERN-project" class="button" target="_blank">View Project</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="projects__card" data-category="web">
+          <img src="assets/img/cvr-letter-generator.png" alt="Cover Letter Generator" class="projects__img">
+          <h3 class="projects__title">Cover Letter Generator</h3>
+          <p class="projects__description">"A simple yet powerful cover letter generator designed specifically for .com.np domain registration. This tool helps users quickly craft professional cover letters, making domain registration and business communications easier and more efficient."</p>
+          <a href="https://github.com/LuckyShrestha2002/cover-letter" class="button" target="_blank">View Project</a>
+      </div>
+      <!-- Project 3 -->
+      <div class="projects__card" data-category="web">
+          <img src="assets/img/budget-app.png" alt="Budget Application" class="projects__img">
+          <h3 class="projects__title">Budget Application</h3>
+          <p class="projects__description">"A sleek and intuitive budget application that helps users manage their finances with ease. By tracking income, expenses, and savings goals, this app empowers users to make smarter financial decisions and stay on top of their budgeting."</p>
+          <a href="https://github.com/LuckyShrestha2002/Budget-app" class="button" target="_blank">View Project</a>
+      </div>
+      <!-- Project 4 -->
+      <div class="projects__card" data-category="web">
+        <img src="assets/img/Dictionary-App.png" alt="Dictionary Application" class="projects__img">
+        <h3 class="projects__title">Dictionary Application</h3>
+        <p class="projects__description">"A user-friendly dictionary application that provides quick and accurate definitions, synonyms, and translations. With a sleek interface and easy navigation, this app enhances learning and language comprehension for users of all levels."</p>
+        <a href="https://github.com/LuckyShrestha2002/Dictionary-app" class="button" target="_blank">View Project</a>
+    </div>
+     <!-- Project 5 -->
+     <div class="projects__card" data-category="web">
+      <img src="assets/img/todo.png" alt="To Do Application" class="projects__img">
+      <h3 class="projects__title">To Do Application</h3>
+      <p class="projects__description">"A simple yet powerful task management application that allows users to easily create, organize, and track tasks. With an intuitive interface and real-time updates, it helps users stay on top of their daily responsibilities and boost productivity. Perfect for managing both personal and professional tasks!"</p>
+      <a href="https://github.com/LuckyShrestha2002/to-do" class="button" target="_blank">View Project</a>
+  </div>
+      
+  </div>
+</section>
+
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">

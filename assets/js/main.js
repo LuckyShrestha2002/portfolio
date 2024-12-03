@@ -55,3 +55,22 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+document.getElementById('project-filter').addEventListener('change', function() {
+    let selectedCategory = this.value; // Get selected value from dropdown
+    let projects = document.querySelectorAll('.projects__card'); // Get all project cards
+  
+    projects.forEach(function(project) {
+      let category = project.getAttribute('data-category'); // Get category of each project
+      
+      if (selectedCategory === 'all') {
+        project.style.display = 'block'; // Show all projects if "All" is selected
+      } else if (category === selectedCategory) {
+        project.style.display = 'block'; // Show projects matching the selected category
+      } else {
+        project.style.display = 'none'; // Hide projects that don't match the selected category
+      }
+    });
+  });
+  

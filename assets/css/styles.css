@@ -162,6 +162,7 @@ img {
   cursor: pointer;
 }
 
+
 /*Active menu*/
 .active-link::after {
   position: absolute;
@@ -323,6 +324,139 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+
+/* ===== PROJECTS ===== */
+/* Center the dropdown container */
+.projects__filter-container {
+  display: flex;
+  justify-content: center; /* Center the dropdown horizontally */
+  margin-bottom: 20px; /* Add some space below the dropdown */
+}
+
+/* Optional: Style for the dropdown itself */
+.projects__filter {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+/* Make the dropdown button bold and bigger */
+#project-filter {
+  
+  font-size: 20px; /* Increase the font size */
+  padding: 10px 15px; /* Adjust the padding for a bigger button */
+}
+
+.projects {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projects__card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.projects__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.projects__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects__title {
+  font-size: 1.25rem;
+  color: var(--second-color);
+  margin-bottom: 1rem;
+}
+
+.projects__description {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  margin-bottom: 1.5rem;
+}
+
+.projects__card a {
+  font-weight: var(--font-semi);
+  color: #fff;
+  background-color: var(--first-color);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projects__card a:hover {
+  background-color: var(--second-color);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .projects__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .projects__card {
+        padding: 1.5rem;
+    }
+
+    .projects__img {
+        height: 180px; /* Make image slightly smaller on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .projects__card {
+        padding: 1.5rem;
+    }
+
+    .projects__img {
+        height: 150px; /* Adjust image size for very small screens */
+    }
+
+    .projects__title {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+
+    .projects__description {
+        font-size: 0.9rem; /* Reduce description font size */
+    }
+
+    .projects__card a {
+        padding: 0.5rem 1.5rem; /* Adjust button size */
+    }
+}
+
+.projects__card {
+  display: block; /* Ensures all projects are shown initially */
+}
+
+
+
+
 
 /* ===== CONTACT =====*/
 .contact__input {
